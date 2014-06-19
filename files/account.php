@@ -274,6 +274,7 @@ function user_account()
 	else
 	{
 		# TODO
+		# Добавить просмотр профилей других пользователей
 	}
 
 	return $out;
@@ -572,7 +573,7 @@ function restore_password ()
 	// --
 
 	$to     	= $email;
-	$from 		= "email@here";		# need to be set 
+	$from 		= "email@here";
 	$domain		= "domain.com";
 
 	$subject =	'Восстановить пароль aккаунта';

@@ -4,7 +4,6 @@ CREATE TABLE `users` (
  `name` varchar(255) DEFAULT NULL,
  `password` varchar(255) DEFAULT NULL,
  PRIMARY KEY (`id_user`),
- UNIQUE KEY `id_user` (`id_user`),
  UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1000 DEFAULT CHARSET=utf8
 
@@ -30,5 +29,5 @@ CREATE TABLE `users_registration` (
  `confirmed_time` datetime DEFAULT NULL,
  `confirmed_ip` bigint(20) DEFAULT NULL,
  PRIMARY KEY (`id_user`),
- UNIQUE KEY `id_user` (`id_user`)
+ UNIQUE KEY `email` (`token`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
